@@ -1,0 +1,93 @@
+
+<!DOCTYPE html
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Calculadora en JavaScript</title>
+  <script language="Javascript" type="text/javascript" src="IndexCalculadora.js"></script>
+  <style type="text/css">
+        #calc {background: url("https://i.pinimg.com/736x/14/33/8c/14338c9edb602c90f2772a86ae360db7.jpg"); border: 0;}
+        #calc td {padding: 4px;}
+        .display {background-color: #ffffff; color: #000000; border: 1px solid #454545; width: 130px; height: 26px; font-family: Arial, Helvetica; font-size: 20px; line-height: 26 px; text-align: right; }
+        .button {width: 24px; border: 1px solid #000; font-family: Arial; font-size: 12px; cursor: hand; background-color: #ffffff;}
+        .buttonLarge { width: 62px; border: 1px solid #000000;  font-family: Arial; font-size: 12px; cursor: hand; background-color: #ffffff;}
+        .func {font-weight: bold; color: #000000;}
+  </style>
+</head>
+
+<body>
+    <table id="calc">
+        <tr>
+            <td colspan="4">
+                <input type="text" Id="txtNumero" maxlength="20" value="0" class="display" readonly="true"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="Button" Id="pow" value="exp" onClick="operar(5)" class="buttonLarge func" />
+            </td>
+            <td>
+                <input type="Button" Id="Dividir" value="/" onClick="operar(4)" class="button func" />
+            </td>
+            <td>
+                <input type="Button" Id="Multiplicar" value="x" onClick="operar(3)" class="button func" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" Id="7" value="7" onClick="asignarNumero('7')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="8" value="8" onclick="asignarNumero('8')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="9" value="9" onclick="asignarNumero('9')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="Restar" value="-" onClick="operar(2)" class="button func" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" Id="4" value="4" onClick="asignarNumero('4')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="5" value="5" onclick="asignarNumero('5')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="6" value="6" onclick="asignarNumero('6')" class="button" />
+            </td>
+        <td>
+            <input type="Button" Id="Sumar" value="+" onClick="operar(1)" class="button func" />
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Button" Id="1" value="1" onClick="asignarNumero('1')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="2" value="2" onclick="asignarNumero('2')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="3" value="3" onclick="asignarNumero('3')" class="button" />
+            </td>
+            <td>
+                <input type="Button" Id="EsIgual" value="=" onClick="esIgual()" class="button func" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="Button" Id="0" value="0" onClick="asignarNumero('0')" class="buttonLarge" />
+            </td>
+            <td>
+                <input type="Button" Id="," value="," onClick="asignarComa() " class="button" />
+            </td>
+        <td>
+        <input type="Button" Id="C" value="C" onClick="teclaC()" class="button func" />
+        </td>
+        </tr>
+    </table>
+</body>
+
+</html>
