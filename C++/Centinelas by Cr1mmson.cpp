@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*const : antecede al tipo de dato que queremos crear y hace constante y no se podra modificar
-el valor de la variable y en dado caso que se modifique el valor de la varialble el compilador
-mandara un erro */
+el valor de la variable y en dado caso que se modifique el valor de la variable el compilador
+mandara un error */
 
 int main(){
     const int centinela = -1;
